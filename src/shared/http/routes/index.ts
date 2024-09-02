@@ -1,8 +1,8 @@
-import productsRouter from '@modules/products/routes/products.routes';
-import { Request, Response, Router } from 'express';
+import ordersRouter from '@modules/orders/http/routes/orders.routes';
+import { Router } from 'express';
 
 const routes = Router();
 
-routes.use('/products', productsRouter);
+routes.use('/orders', ordersRouter);
 
 export default routes;
